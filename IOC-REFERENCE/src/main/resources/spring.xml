@@ -1,0 +1,15 @@
+	<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="e" class="com.krishna.Engine">
+		<property name="speed" value="Fast" />
+		<property name="capacity" value="V8" />
+	</bean>
+
+	<bean id="c" class="com.krishna.Car">
+		<property name="name" value="Audi" />
+		<property name="release_year" value="2000" />
+		<property name="engine" ref="e" />
+	</bean>
+</beans>
